@@ -1,0 +1,57 @@
+:root {
+    /* Only include this part if you wish to change these variables */
+    /* To disable the border, you can change the transparency to 0 */
+    --user-area-border-width: 1.5px;
+    --user-area-border-color: rgba(121, 227, 121, 0.5);
+}
+
+.visual-refresh .panels_c48ade .wrapper_e131a9 {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    will-change: transform, opacity;
+    transform: translateY(5px);
+    transition:
+        max-height  0.15s ease 0.15s,
+        transform 0.15s ease 0.155s,
+        opacity 0.3s ease 0.15s;
+}
+
+.visual-refresh .panels_c48ade div.container__37e49.containerRtcOpened__37e49 {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border: var(--user-area-border-width) solid var(--user-area-border-color);
+    z-index: 2000;
+}
+
+#vc-spotify-player {
+  max-height: 0;
+  opacity: 0;
+  padding: 0 !important;
+  overflow: hidden;
+  will-change: transform, opacity;
+  transform: translateY(5px);
+  margin: 0 !important;
+  transition:
+    max-height 0.15s ease 0.15s,
+    padding    0s ease  0.25s,
+    transform 0.15s ease 0.155s,
+    opacity 0.3s ease 0.15s;
+}
+
+.visual-refresh .panels_c48ade:hover .wrapper_e131a9,
+.visual-refresh .panels_c48a9 .wrapper_e131a9:hover,
+#vc-spotify-player:hover,
+.visual-refresh .panels_c48ade:hover #vc-spotify-player,
+.visual-refresh .panels_c48a9 .wrapper_e131a9:hover #vc-spotify-player {
+  max-height: 450px !important;
+  transform: translateY(0);
+  opacity: 1;
+  transition: max-height 0s ease;
+}
+
+#vc-spotify-player:hover,
+.visual-refresh .panels_c48ade:hover #vc-spotify-player,
+.visual-refresh .panels_c48a9 .wrapper_e131a9:hover #vc-spotify-player {
+    padding: 12px !important;
+} 
