@@ -1,6 +1,7 @@
 :root {
     /* Only include this part if you wish to change these variables */
     --add-custom-status-text: "Add custom status";
+    --add-custom-status-text-margin: 4px;
 }
 
 .visual-refresh {
@@ -38,7 +39,7 @@
         
         >.inner_ab8609 {
           >.addStatusIcon_ab8609 {
-            margin-right: 0px;
+            margin-right: var(--add-custom-status-text-margin);
           }
 
           > [data-text-variant="text-sm/normal"] {
