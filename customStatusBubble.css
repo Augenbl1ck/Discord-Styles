@@ -35,12 +35,19 @@
           left: -43px;
         }
 
-        >.inner_ab8609 > [data-text-variant="text-sm/normal"] {
-          font-size: 0;
+        
+        >.inner_ab8609 {
+          >.addStatusIcon_ab8609 {
+            margin-right: 0px;
+          }
 
-          &:after {
-            content: var(--add-custom-status-text);
-            font-size: 14px;
+          > [data-text-variant="text-sm/normal"] {
+            font-size: 0;
+  
+            &:after {
+              content: var(--add-custom-status-text);
+              font-size: 14px;
+            }
           }
         }
       }
