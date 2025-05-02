@@ -1,0 +1,44 @@
+:root {
+    /* Only include this part if you wish to change these variables */
+    --add-custom-status-text: "Add custom status";
+}
+
+.visual-refresh {
+  .header__5be3e {
+    &:has(.container_ab8609) {
+      min-height: calc(var(--custom-user-profile-banner-height) + 55px) !important;
+    }
+
+    >.container_ab8609 {
+      top: calc(var(--custom-user-profile-banner-height) + 7px) !important;
+      left: 117px !important;
+
+      >.outer_ab8609 {
+        max-width: 167px !important;
+
+        &::before {
+          height: 20px;
+          width: 20px;
+          top: 32px;
+          left: -25px;
+        }
+
+        &::after {
+          height: 10px;
+          width: 10px;
+          top: 31px;
+          left: -43px;
+        }
+
+        >.inner_ab8609 > [data-text-variant="text-sm/normal"] {
+          font-size: 0;
+
+          &::after {
+            content: var(--add-custom-status-text);
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
