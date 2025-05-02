@@ -10,13 +10,17 @@
       min-height: calc(var(--custom-user-profile-banner-height) + 85px) !important;
     }
 
+    >.none_d125d2 .header__7f9c0:has(.container_ab8609),
+    >.header__5a2c6,
     >.header__5be3e:has(.container_ab8609) {
       min-height: calc(var(--custom-user-profile-banner-height) + 57px) !important;
     }
 
     header >.headerInner__24502 > .container_ab8609,
-    .header__5be3e >.container_ab8609 {
-      top: calc(var(--custom-user-profile-banner-height) + 8px) !important;
+    >.header__7f9c0 > .container_ab8609,
+    >.header__5a2c6 > .container_ab8609,
+    >.header__5be3e > .container_ab8609 {
+      top: calc(var(--custom-user-profile-banner-height) + 9px) !important;
       left: 117px !important;
 
       >.outer_ab8609 {
