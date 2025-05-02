@@ -6,12 +6,12 @@
 
 .visual-refresh {
   .inner_c0bea0 {
-    > header{
-      &:has(.headerInner__24502){
-        min-height: calc(var(--custom-user-profile-banner-height) + 85px) !important;
-      }
+    > header {
       &:has(.container_ab8609){
         min-height: calc(var(--custom-user-profile-banner-height) + 50px) !important;
+      }
+      &:has(.headerInner__24502){
+        min-height: calc(var(--custom-user-profile-banner-height) + 85px) !important;
       }
     }
     
