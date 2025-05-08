@@ -2,6 +2,7 @@
     /* Only include this part if you wish to change these variables */
     --add-custom-status-text: "Add custom status";
     --add-custom-status-text-margin: 4px;
+    --add-custom-status-hide: block;
 }
 
 .visual-refresh {
@@ -26,6 +27,7 @@
     >.none_d125d2 .header__7f9c0 > .container_ab8609,
     >.header__5a2c6 > .container_ab8609,
     >.header__5be3e > .container_ab8609 {
+      display: var(--add-custom-status-hide);
       top: calc(var(--custom-user-profile-banner-height) + 9px) !important;
       left: 117px !important;
 
@@ -47,6 +49,10 @@
         }
         
         >.inner_ab8609 {
+          >.content_ab8609 {
+            max-height: none !important;
+          }
+            
           >.addStatusIcon_ab8609 {
             margin-right: var(--add-custom-status-text-margin);
           }
