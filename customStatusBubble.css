@@ -51,6 +51,15 @@
         >.inner_ab8609 {
           >.content_ab8609 {
             max-height: none !important;
+
+            > [data-text-variant="text-sm/normal"] {
+              font-size: 0;
+    
+              &:after {
+                content: var(--add-custom-status-text);
+                font-size: 14px;
+              }
+            }
           }
             
           >.addStatusIcon_ab8609 {
