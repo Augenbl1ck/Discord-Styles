@@ -52,7 +52,7 @@
           >.content_ab8609 {
             max-height: none !important;
 
-            > [data-text-variant="text-sm/normal"] {
+            >.text-sm\/normal_cf4812.statusText_ab8609.italicPrompt_ab8609 {
               font-size: 0;
     
               &:after {
@@ -66,7 +66,7 @@
             margin-right: var(--add-custom-status-text-margin);
           }
 
-          > [data-text-variant="text-sm/normal"] {
+          >.defaultColor__4bd52.text-sm\/normal_cf4812.addStatusPrompt_ab8609.italicPrompt_ab8609 {
             font-size: 0;
   
             &:after {
