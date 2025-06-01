@@ -20,7 +20,7 @@
 .visual-refresh .panels_c48ade div.container__37e49.containerRtcOpened__37e49 {
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
-    border: 1.5px solid rgba(0, 128, 0, 0.5);
+    border: var(--user-area-border-width) solid var(--user-area-border-color);
     z-index: 2000;
 }
 
