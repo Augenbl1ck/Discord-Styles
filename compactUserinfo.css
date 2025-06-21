@@ -52,7 +52,7 @@
 
         .descriptionClamp_f5f93a {
           -webkit-line-clamp: min(max(var(--max-lines), 1), 11);
-          max-height: 19px;
+          max-height: 22.6px;
           transition: max-height calc(var(--anim-time) + 0.5s) ease var(--delay-t);
 
           &:hover {
