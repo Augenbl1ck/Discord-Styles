@@ -44,7 +44,7 @@
 
         .descriptionClamp_f5f93a {
           -webkit-line-clamp: min(max(var(--max-lines), 1), 11);
-          max-height: 19px;
+          max-height: 22.6px;
 
           &:hover {
             max-height: 200px;
