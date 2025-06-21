@@ -85,7 +85,7 @@
         max-height: 0px;
         padding: 0px 16px 0px;
         overflow: hidden;
-        transition: max-height var(--anim-time) ease var(--delay-t), padding var(--anim-time) ease var(--delay-t);
+        transition: max-height var(--anim-time) ease var(--delay-t);
 
         >.container_a99829 {
           margin-top: 8px;
@@ -98,7 +98,7 @@
       >.footer__5be3e {
         max-height: 70px;
         overflow: hidden;
-        transition: max-height var(--anim-time) ease, padding var(--anim-time) ease;
+        transition: max-height var(--anim-time) ease;
       }
       
       >.wrapper_da5890 {
