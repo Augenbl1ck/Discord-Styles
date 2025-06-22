@@ -66,18 +66,10 @@
     }
 
     & > div.bar_c38106 {
-      /* position: absolute;
-      position-anchor: --vr-header-snippet; */
-      /* position: relative;
-      top: var(--vr-header-snippet-top) + 30px;
-      right: anchor(right); */
-      /* width: anchor-size(width); */
-      /* margin-top: 13px;
-      z-index: 1; */
-      padding: unset;
-      position: absolute;
-      right: 0; /* Rechtsbündig */
-      top: 0;   /* Optional: vertikale Ausrichtung */
+      position: relative;
+      top: -23px;
+      right: anchor(right);
+      width: anchor-size(width);
       
       & > .title_c38106 {
         display: none;
@@ -94,6 +86,7 @@
       background: none;
       border: none;
       height: var(--custom-channel-header-height);
+      top: 36px;
       padding-right: 10px !important;
     }
 
