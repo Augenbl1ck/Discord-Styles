@@ -1,0 +1,365 @@
+:root {
+/* Min (with nametag on): -125; Min (with nametag off): -100 */
+  --custom-space: -105px;
+  --background-color-hover: color-mix(in oklab, rgb(32, 32, 36) 100%, rgb(0, 0, 0));
+  --voice-channel-color: var(--notice-background-positive);
+}
+
+/* Mit Spotify einklappbar wenn nicht aktiv */
+/* Optional adjustment of the user card */
+.visual-refresh {
+  .outer_c0bea0.user-profile-popout.themeContainer_ce8328 {
+    bottom: -210px !important;
+    left: 64px !important;
+  }
+  .container__2637a {
+    padding-bottom: 0;
+  }
+
+  .bottom__7aaec {
+    bottom: 10px;
+  }
+
+  .unreadBottom__629e4 {
+    bottom: 10px;
+  }
+
+  .sidebar_c48ade {
+    background-color: var(--bg-base-tertiary);
+  }
+
+  .privateChannels__35e86 .scroller__99e7c {
+    margin-bottom: 0px !important;
+  }
+
+  /* Spotify Listening Fix */
+  .listeningAlong_e0cf27 {
+    border-top: unset;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+  }
+}
+
+.panels_c48ade {
+  height: calc(var( --custom-space)*-2);
+  min-height: 205px;
+  width: calc(var(--custom-guild-list-width) - var(--space-xs)*2) !important;
+  transform-origin: 0 0;
+  /* FadeOut folded user area */
+  transition: width .5s ease;
+  /* border: 1px solid var(--border-normal) !important; */
+
+  #vc-spotify-player {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    width: calc(100% - var(--custom-panels-spacing) * 2 - (var(--custom-guild-list-width) - var(--space-xs)*2));
+    top: 28%;
+    left: calc(var(--custom-guild-list-width) - var(--space-xs)*2);
+    padding-left: 0;
+    padding-bottom: 0;
+    border-bottom: unset;
+    /* FadeOut Spotify animataion */
+    transition: opacity .25s ease;
+  }
+
+  /* 
+    Fehler hier
+    &:not(:has(button[aria-label="Disable Game Activity"])) {
+    .buttons__37e49 {
+      gap: 12px !important;
+      transform: translateX(-3%) !important;
+      border-left: 1px solid var(--background-modifier-accent);
+      padding-left: 12px;
+    }
+  } */
+
+  .avatarWrapper__37e49{
+    min-width: 40px;
+    transform-origin: left bottom;
+    transform: rotate(-90deg) translate(0%, 110%);
+    
+    .nameTag__37e49.canCopy__37e49 {
+      display: block;
+      pointer-events: none;
+      margin-left: -15px;
+      border-radius: var(--radius-sm);
+      border-bottom-right-radius: 24px;
+      border-top-right-radius: 24px;
+      min-width: auto;
+      height:37px;
+      opacity: 0;
+      /* Hover Animation of Nametag without unfolded user area */
+      transition: opacity .2s ease, background-color 0s ease .5s;
+      z-index: -1;
+      
+      >.panelTitleContainer__37e49 {
+        margin-top: 2px;
+      }
+
+      >.panelTitleContainer__37e49,
+      >.panelSubtextContainer__37e49 {
+        margin-left: 15px;
+        margin-right: 15px;
+        max-width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 75px);
+      }
+
+    }
+
+    &:hover {
+      background-color: unset !important;
+
+      .nameTag__37e49.canCopy__37e49 {
+        transform-origin: 0 0;
+      }
+    }
+
+    &:not(:hover) .hovered__0263c {
+      transform: translate3d(0, 107%, 0) !important;
+    }
+
+    &:not(:hover) .default__0263c {
+      opacity: 1 !important;
+      transform: unset !important;
+    }
+  }
+
+  .buttons__37e49 button svg {
+    transform: rotate(-90deg) !important;
+  }
+  
+  .container_e131a9 {
+    opacity: 0;
+    pointer-events: none;
+  } 
+  
+  .container__37e49{
+    width: calc(var(--custom-space)*-2);
+    min-width: 205px;
+    transform-origin: left top;
+    transform: rotate(90deg) translate(1.05%, -100%);
+  }
+
+  /* Playing Game Fix */
+  &:has(.activityPanel_c48ade) {
+    height: calc(var( --custom-space)*-2 + 50px);
+
+    #vc-spotify-player {
+      top: 41%;
+    }
+
+    .actions__4cd01 {
+      display: none;
+    }
+
+    .body__5dec7 {
+      position: abs;
+      margin-left: 3px;
+    }
+
+    .activityPanel_c48ade {
+      background-color: color-mix(in oklab, rgb(32, 32, 36) 100%, rgb(0, 0, 0));
+    }
+  }
+
+  /* Spotify Listening Fix */
+  &:has(.listeningAlong_e0cf27) {
+    height: calc(var( --custom-space)*-2 + 107px);
+
+    .icons_e0cf27 {
+      margin-left: 10px;
+    }
+
+    #vc-spotify-player {
+      top: 52%;
+    }
+
+    &:not(:has(.activityPanel_c48ade)) {
+      height: calc(var( --custom-space)*-2 + 57px);
+
+      #vc-spotify-player {
+        top: 43%;
+      }
+    }
+
+    &:not(:hover) {
+      .listeningAlong_e0cf27 .text-sm\/medium_cf4812.title_b6c092,
+      .listeningAlong_e0cf27 .text-xs\/normal_cf4812.subtext__339d0 {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .flex__7c0ba.horizontal__7c0ba.justifyEnd_abf706.alignStretch_abf706.noWrap_abf706.party_e0cf27 {
+        margin-left: 0;
+        position: absolute;
+      }
+
+      .icons_e0cf27 .button__67645.enabled__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5.button__67645 {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+    
+  }
+
+  &:has(.container_e131a9){
+    background-color: var(--voice-channel-color);
+    /* FadeOut userare in Talk */
+    transition: width .5s ease, background-color .3s ease .35s;
+
+    .activityPanel_c48ade {
+      background-color: var(--voice-channel-color);
+      /* FadeOut userare in Talk */
+      transition: width .5s ease, background-color .3s ease .35s;
+    }
+    .listeningAlong_e0cf27 {
+      background-color: var(--voice-channel-color);
+      /* FadeOut userare in Talk */
+      transition: width .5s ease, background-color .3s ease .35s;
+    }
+    .container__37e49 {
+      /* Support for Snippet: Revert visual refresh server list by scattagain */
+      transform: rotate(90deg) translate(-50%, -100%);
+      /* Normal Server Icons */
+      /* transform: rotate(90deg) translate(-50%, -107%); */
+    }
+    .nameTag__37e49.canCopy__37e49 { 
+      /* FadeOut Nametag in Talk */
+      transition: opacity .1s ease 0s, background-color 0s ease .1s;
+    }
+  } 
+}
+
+.panels_c48ade:hover {
+  &:has(#vc-spotify-player) {
+    width: calc(100% - var(--custom-panels-spacing)* 2) !important;
+    /* unfolded user area animation with Spotify not in Talk*/
+    transition: width .6s ease;
+    transform-origin: 0 0;
+
+    #vc-spotify-player {
+      display: block;
+      pointer-events: auto;
+      opacity: 1;
+      /* FadeIn user area animation with Spotify not in Talk*/
+      transition: opacity .6s ease .1s;
+    }
+  }
+
+  .nameTag__37e49.canCopy__37e49 {
+    pointer-events: auto;
+    margin-left: -25px;
+    background-color: color-mix(in oklab, rgb(44, 44, 49) 100%, rgb(0, 0, 0));
+    border-radius: var(--radius-sm);
+    border-bottom-right-radius: 24px;
+    border-top-right-radius: 24px;
+    height:37px;
+    min-width: auto;
+    opacity: 1;
+    /* Hover animation of Nametag without unfolded user area */
+    transition: opacity .3s ease .1s, background-color 0s ease .1s;
+    z-index: -1;
+    
+    >.panelTitleContainer__37e49 {
+      margin-top: 2px;
+    }
+
+    >.panelTitleContainer__37e49,
+    >.panelSubtextContainer__37e49 {
+      margin-left: 25px;
+      margin-right: 15px;
+      max-width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 75px);
+    }
+  }
+
+  &:has(.container_e131a9) {
+    width: calc(100% - var(--custom-panels-spacing)* 2) !important;
+    transform-origin: 0 0;
+    background-color: var(--background-color-hover) !important;
+    /* unfolded user area animation in Talk*/
+    transition: background-color 0s ease, width .6s ease !important;
+    .activityPanel_c48ade {
+      background-color: var(--background-color-hover);
+      /* FadeOut userare in Talk */
+      transition: background-color 0s ease, width .6s ease !important;
+    }
+    .listeningAlong_e0cf27 {
+      background-color: var(--background-color-hover);
+      /* FadeOut userare in Talk */
+      transition: background-color 0s ease, width .6s ease !important;
+    }
+    .nameTag__37e49.canCopy__37e49 {
+      /* FadeIn Nameplate in Talk */
+      transition: opacity .3s ease .3s, background-color 0s ease .1s;
+    }
+
+    &:has(#vc-spotify-player) {
+      height: calc(var( --custom-space)*-2 + 108px);
+
+      /* Activity and Listening Fix */
+      &:has(.activityPanel_c48ade) {
+        height: calc(var( --custom-space)*-2 + 157px);
+
+        #vc-spotify-player {
+          top: 58%;
+        }
+      }
+      
+      &:has(.listeningAlong_e0cf27) {
+        height: calc(var( --custom-space)*-2 + 164px);
+
+        #vc-spotify-player {
+          top: 60%;
+        }
+
+        &:has(.activityPanel_c48ade) {
+          height: calc(var( --custom-space)*-2 + 213.575px);
+
+          #vc-spotify-player {
+            top: 64%;
+          }
+        }
+      }
+
+      .container_e131a9 {
+        pointer-events: auto;
+        opacity: 1;
+        /* FadeIn Talk Control in Talk */
+        transition: opacity .6s ease .18s;
+      }
+      .container__37e49 {
+        transform: rotate(90deg) translate(1%, -100%);
+      }
+      #vc-spotify-player {
+        pointer-events: auto;
+        top: 52.5%;
+        opacity: 1;
+        background-color: var(--background-color-hover) !important;
+        /* FadeIn Animation Spotify in Talk */
+        transition: opacity .6s ease .3s;
+      }
+    }
+      
+    &:not(:has(#vc-spotify-player)) {
+      .container_e131a9 {
+        pointer-events: auto;
+        opacity: 1;
+        transform: translate(0%, 38%);
+        border-bottom: unset;
+        /* FadeIn Talk Control in Talk without Spotify */
+        transition: opacity .6s ease .18s;
+        margin-left: calc(var(--custom-guild-list-width) - var(--space-xs)*2);
+      }
+      .container__37e49 {
+        transform: rotate(90deg) translate(-70.6%, -100%);
+      }
+      .actionButtons_e131a9 {
+        grid-template-columns: repeat(2, 1fr); 
+        padding-top: 4px;
+      }
+      .flex__7c0ba.horizontal__7c0ba.justifyStart_abf706.alignStretch_abf706.noWrap_abf706.voiceButtonsContainer_e131a9 {
+        margin-left: 5px;
+      }
+    } 
+  }
+}
