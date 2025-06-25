@@ -8,8 +8,7 @@
   main.container__133bf,
   div.chatLayerWrapper__01ae2 {
     & section.container__9293f {
-/*       padding-right: var(--vr-header-snippet-space); */
-      padding-right: 125px;
+      padding-right: var(--vr-header-snippet-space);
     }
   }
 
