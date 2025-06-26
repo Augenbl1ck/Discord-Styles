@@ -219,7 +219,7 @@
     }
     .container__37e49 {
       /* Support for Snippet: Revert visual refresh server list by scattagain */
-      transform: rotate(90deg) translate(-50%, -100%);
+      transform: rotate(90deg) translate(-52.5%, -100%);
       /* Normal Server Icons */
       /* transform: rotate(90deg) translate(-50%, -107%); */
     }
@@ -328,7 +328,7 @@
         transition: opacity .6s ease .18s;
       }
       .container__37e49 {
-        transform: rotate(90deg) translate(1%, -100%);
+        transform: rotate(90deg) translate(-1%, -100%);
       }
       #vc-spotify-player {
         pointer-events: auto;
@@ -344,14 +344,14 @@
       .container_e131a9 {
         pointer-events: auto;
         opacity: 1;
-        transform: translate(0%, 38%);
+        transform: translate(0%, 34%);
         border-bottom: unset;
         /* FadeIn Talk Control in Talk without Spotify */
         transition: opacity .6s ease .18s;
         margin-left: calc(var(--custom-guild-list-width) - var(--space-xs)*2);
       }
       .container__37e49 {
-        transform: rotate(90deg) translate(-70.6%, -100%);
+        transform: rotate(90deg) translate(-73%, -100%);
       }
       .actionButtons_e131a9 {
         grid-template-columns: repeat(2, 1fr); 
