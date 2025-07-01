@@ -1,6 +1,8 @@
 :root{
   --popup-height: 200px;
   --popup-margin-top: 5px; 
+  /* If you dont use AlwaysExpandRoles set this to flex */
+  --popup-pill: none;
 }
 
 .visual-refresh {
@@ -19,7 +21,7 @@
         }
 
         .pill_fccfdf{
-          display: none;
+          display: var(--popup-pill);
         }
 
         .descriptionClamp_f5f93a {
