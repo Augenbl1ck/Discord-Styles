@@ -18,7 +18,7 @@
     }
 
     >.profile__9c3be > .profileHeader__9c3be {
-      min-height: calc(var(--custom-user-profile-banner-height) + 95px) !important;
+      min-height: calc(var(--custom-user-profile-banner-height) + 100px) !important;
     }
     
     >.none_d125d2 .header__7f9c0:has(.container_ab8609),
@@ -85,8 +85,8 @@
     }
 
     .profileHeader__9c3be > .container_ab8609 {
-      top: calc(var(--custom-user-profile-banner-height) + 28px) !important;
-      left: 170px !important;
+      top: calc(var(--custom-user-profile-banner-height) + 35px) !important;
+      left: 160px !important;
     }
 
     header > .headerInner__24502 > .container_ab8609 {
