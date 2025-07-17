@@ -11,7 +11,7 @@
           margin-bottom: 22px;
 
 
-          /* Border like from roles | Comment  for no borders */
+          /* Border like from roles | Comment for no borders */
           >.section_bf424d.section_be87fd > .container__9bfb9.profileAppConnections__9c3be > .connection__9bfb9{
             padding: 7px;
 
@@ -23,7 +23,7 @@
             }
           }
 
-          /* Horizontal layout | Comment  for vertical layout */
+          /* Horizontal layout | Comment for vertical layout */
           >.section_bf424d.section_be87fd > .container__9bfb9.profileAppConnections__9c3be {
             flex-direction: row; 
             flex-wrap: wrap; 
@@ -35,7 +35,7 @@
               /* If you want to cut the Names for a better layout uncomment this */
               /* max-width: 110px; */
 
-              /* No metadata for better layout | Comment  for metadata */
+              /* No metadata for better layout | Comment for metadata */
               .defaultColor__4bd52.text-xs\/normal_cf4812,
               >.metadata__9bfb9{
                 display: none;
