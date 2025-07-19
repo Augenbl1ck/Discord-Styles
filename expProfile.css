@@ -17,10 +17,6 @@
 
             border: 1px solid var(--user-profile-border);
             border-radius: var(--radius-sm);
-
-            >.connectionInfo__9bfb9 {
-              margin-top: 4px;
-            }
           }
 
           /* Horizontal layout | Comment for vertical layout */
