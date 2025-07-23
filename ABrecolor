@@ -1,0 +1,400 @@
+:root {
+  --rec-locked: var(--status-danger-background);
+
+  --rec-news-1: rgba(255, 166, 0, 0.811);
+  --rec-news-2: rgba(255, 68, 0, 0.811);
+
+  --rec-rules: rgba(0, 128, 0, 0.811);
+
+  --rec-stage: rgba(102, 51, 153, 0.811);
+  --rec-mic: rgba(181, 16, 16, 0.811);
+
+  --rec-forum: rgba(51, 144, 153, 0.811);
+
+  --rec-help: rgba(255, 255, 0, 1);
+  --rec-delete: var(--status-danger-background);
+
+  --rec-ping-locked: var(--status-danger-background);
+
+  --rec-create-channel-locked: var(--status-danger-background);
+
+  --rec-category: rgb(185, 123, 82);
+  --rec-category-effect:  rgb(255, 169, 111);
+  --rec-roles-category: rgb(255, 169, 111);
+
+  --rec-channel-lines: rgb(185, 123, 82);
+  --rec-channel-selected: rgba(185, 123, 82, 0.72);
+
+  --rec-unread-text-color: rgb(255, 180, 130);
+  --rec-unread-circle-color: rgb(185, 123, 82);
+
+  --rec-top-boosting: var(--guild-boosting-pink);
+  --rec-top-members: rgb(187, 177, 35);
+  --rec-search-channels: rgb(38, 166, 106);
+  --rec-top-events: rgb(38, 81, 166);
+  --rec-top-pin: rgb(167, 85, 51);
+  --rec-top-noti-on: rgb(37, 154, 4);
+  --rec-top-noti-off: rgb(154, 4, 4);
+
+  --rec-dm-nitro: rgb(226, 146, 170);
+  --rec-dm-friends: rgb(187, 177, 35);
+  --rec-dm-shop-1: rgb(187, 15, 15);
+  --rec-dm-shop-2: rgb(203, 193, 116);
+
+  --rec-threads: rgba(166, 38, 85, 0.625);
+  --rec-threads-line: rgb(111, 24, 56);
+  --rec-threads-line-effect: rgb(213, 26, 94);
+
+  --rec-message-delay: var(--status-danger-background);
+}
+
+/*--- (NSFW) Locked Icon ---*/
+[class^=emptyChannelIcon_] path[d^="M16 4h.5v-.5a2.5"],
+[class^=channelIcon_] path[d^="M16 4h.5v-.5a2.5"],
+[class^=voiceIcon_] path[d^="M16 4h.5v-.5a2.5"],
+[class^=icon_] path[d^="M6 9h1V6a5 5 0 0 1 10 0v3h1a3"],
+[class^=icon__] path[d^="M18.09 1.63c.4-.7 " ] {
+    fill: var(--rec-locked) !important;
+}
+
+/*------ NSFW Thread Icon Message ------*/
+[class^=icon__] path[d^="M18.09 15.63c.4-.7 1.43-.7 1.82"] {
+    fill: var(--rec-locked) !important;
+}
+
+/*------ Channel search icon ------*/
+[class^=channelNameIcon_] path[d^="M18.09 1.63c.4-.7 " ],
+[class^=channelNameIcon_] path[d^="M16.5 18H16a1 " ],
+[class^=channelNameIcon_] path[d^="M16 4h.5v-.5a2.5" ] {
+    fill: var(--rec-locked) !important;
+}
+[class^=searchResultChannelIcon_] path[d^="M18.09 1.63c.4-.7" ],
+[class^=searchResultChannelIcon_] path[d^="M16.5 18H16a1" ],
+[class^=searchResultChannelIcon_] path[d^="M16 4h.5v-.5a2.5" ] {
+    fill: var(--rec-locked) !important;
+}
+/*--- Help Button ---*/
+[class^=icon_] path[d^="M23 12a11 11 0 1 1-22" ],
+[class^=anchor_edefb8] path[d^="M12 23a11 11 0 1 0 0-22 11 11" ] {
+    fill: var(--rec-help) !important;
+}
+/*--- Delete Button ---*/
+[class^=searchClearHistory_]  {
+    color: var(--rec-delete) !important;
+}
+
+/*--- News ---*/
+[class^=searchResultChannelIcon_] path[d^="M19.56 2a3 3 0 0 0-2.46"],
+[class^=searchResultChannelIcon_] path[d^="M12.33 5.74a.5.5 0 0 1 .67.47V9a3"]{
+    fill: var(--rec-news-1) !important;
+}
+[class^=searchResultChannelIcon_] path[d^="M2 10c0-1.1.9-2 2-2h.5c.28 0 .5.22.5.5v7a.5.5 0 0 1-.5.5H4a2"] {
+    fill: var(--rec-news-2) !important;
+}
+/*--- Rules ---*/
+[class^=channelIcon_] path[d^="M15 2a3 3 0 0 1 3 3v12H5.5a1.5"],
+[class^=searchResultChannelIcon_] path[d^="M15 2a3 3 0 0 1 3 3v12H5.5a1.5"] {
+    fill: var(--rec-rules) !important;
+}
+/*--- Stage ---*/
+[class^=searchResultChannelIcon_] path[d^="M21.92 14.08c.32.27.86.15.93-"],
+[class^=searchResultChannelIcon_] path[d^="M13.48 16.18c.39.1.45.62.2.93A2.99"],
+[class^=searchResultChannelIcon_] path[d^="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"],
+[class^=searchResultChannelIcon_] path[d^="M16.83 15.23c.43.47 1.18.42 1.45-.14a7"],
+[class^=searchResultChannelIcon_] path[d^="M19.61 18.25a1.08 1.08 0 0 1-.07-1.33"] {
+    fill: var(--rec-stage) !important;
+}
+/*--- Forum ---*/
+[class^=searchResultChannelIcon_] path[d^="M18.91 12.98a5.45 5.45"],
+[class^=searchResultChannelIcon_] path[d^="M19.24 10.86c.32.16.72-.02.74-.38L20"],
+[class^=searchResultChannelIcon_] path[d^="M13.58 3.23c.24-.33.15-.86-.24-.96C12.59"] {
+    fill: var(--rec-forum) !important;
+}
+
+/*------ Ping Locked ------*/
+[class^=ping_] path[d^="M18.09 14.63c.4-.7"] {
+    fill: var(--rec-ping-locked) !important;
+}
+
+/*--- Create Channel ---*/
+[class^=inputPrefix_] path[d^="M16 4h.5v-.5a2.5"],
+[class^=switchIcon_] path[d^="M6 9h1V6a5 5 0 0 1 10 0v3h1a3"],
+[class^=subtitleIcon_] path[d^="M16 4h.5v-.5a2.5"] {
+    fill: var(--rec-create-channel-locked) !important;
+}
+
+/*--- Category ---*/
+.wrapper__29444,
+.wrapper__29444 path[d^="M5.3 9.3a1 1 0 0 1 1.4 0l5.3 5.29 5.3-5.3a1 1 0 1 1 1.4 1.42l-6 6a1 1 0 0 1-1.4 0l-6-6a1 1 0 0 1 0-1.42Z"],
+.container__13cf1{
+  color: var(--rec-category) !important;
+}
+/*--- Category Effekt ---*/
+.wrapper__29444:hover  path[d^="M5.3 9.3a1 1 0 0 1 1.4 0l5.3 5.29 5.3-5.3a1 1 0 1 1 1.4 1.42l-6 6a1 1 0 0 1-1.4 0l-6-6a1 1 0 0 1 0-1.42Z"],
+.wrapper__29444:hover .container__13cf1{
+  color: var(--rec-category-effect) !important;
+}
+
+/*--- Roles Category ---*/
+.container__13cf1 span {
+  color: var(--rec-roles-category) !important;
+}
+
+/*--- Channellines ---*/
+.spineBorder__5b40b {
+  left: calc(var(--channels-spine-offset-left) + 7.5px);
+}
+.containerDefault_c69b6d:not(.wrapper__2ea32) {
+  margin-left: 15.5px;
+  border-left: 1px solid var(--rec-channel-lines);
+
+  .selectedChannel_c69b6d .link__2ea32 {
+    background: linear-gradient(to right, var(--rec-channel-selected) 0%, var(--background-modifier-selected) 90%) !important;
+  }
+
+  .spine__5b40b{
+    left: calc(var(--channels-spine-offset-left) - 9px);
+  }
+
+  .name__2ea32,
+  .overflow__82b15 {
+    font-size: 15.5px;
+    line-height: 1.4;
+  }
+  
+  .iconVisibility_c69b6d.wrapper__2ea32 {
+    margin-left: 0px;
+
+    .link__2ea32 {
+      border-bottom-left-radius: 0px;
+      border-top-left-radius: 0px;
+
+      .icon__2ea32 {
+        scale: 0.8;
+      }
+
+      .linkTop__2ea32 {
+        gap: 4px;
+      }
+    }
+  }
+  .iconVisibility_c69b6d.wrapper__2ea32.typeThread__2ea32 {
+    margin-left: calc(16px - 10px + var(--space-md));
+
+    .link__2ea32 {
+      border-radius: var(--radius-sm);
+
+      .icon__2ea32 {
+        scale: 0.8;
+      }
+
+      .linkTop__2ea32 {
+        gap: 4px;
+      }
+    }
+  }
+
+  /* .modeUnreadImportant__2ea32 .link__2ea32 {
+    background: linear-gradient(to right, rgb(185, 123, 82) 0%, rgba(33, 33, 33, 0) 50%) !important;
+    border-bottom-right-radius: var(--radius-sm);
+    border-top-right-radius: var(--radius-sm);
+  } */
+
+  .modeUnreadImportant__2ea32 .name__2ea32 {
+    color: var(--rec-unread-text-color);
+  }
+
+  .unread__2ea32 {
+    margin-left: 6px;
+    background-color: var(--rec-unread-circle-color) !important;
+    transform: scaleY(1.5);
+  }
+}
+.wrapper__29444 {
+  padding-left: 10px;
+  box-sizing: content-box;
+
+  .mainContent__29444 {
+    flex-direction: row-reverse !important;
+    flex: none !important;
+    gap: 8px;
+  }
+
+  .icon__29444 {
+    scale: 1.25;
+  }
+}
+
+/*--- Locked Channel   ---*/
+[class^=channelOptionIcon_] path[d^="M16.5 18H16a1"],
+[class^=channelOptionIcon_] path[d^="M16 4h.5v-.5a2.5"],
+[class^=icon_] path[d^="M16 4h.5v-.5a2.5"],
+[class^=icon_] path[d^="M16.5 18H16a1"] {
+    fill: var(--rec-locked) !important;
+}
+
+/*------ Media Channels ------*/
+/*--- Stage ---*/
+[class^=channelOptionIcon_] path[d^="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"],
+[class^=channelOptionIcon_] path[d^="M21.92 14.08c.32.27.86.15.93-"],
+[class^=channelOptionIcon_] path[d^="M13.48 16.18c.39.1.45.62.2.93A2.99"], 
+[class^=stageIcon_] path[d^="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"],
+[class^=stageIcon_] path[d^="M16.83 15.23c.43.47 1.18.42 1.45-.14a7"],
+[class^=stageIcon_] path[d^="M19.61 18.25a1.08 1.08 0 0 1-.07-1.33"], 
+[class^=subtitleIcon_] path[d^="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"],
+[class^=subtitleIcon_] path[d^="M16.83 15.23c.43.47 1.18.42 1.45-.14a7"],
+[class^=subtitleIcon_] path[d^="M19.61 18.25a1.08 1.08 0 0 1-.07-1.33"], 
+[class^=inputPrefix_] path[d^="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"],
+[class^=inputPrefix_] path[d^="M16.83 15.23c.43.47 1.18.42 1.45-.14a7"],
+[class^=inputPrefix_] path[d^="M19.61 18.25a1.08 1.08 0 0 1-.07-1.33"], 
+[class^=icon_] path[d^="M21.92 14.08c.32.27.86.15.93-"],
+[class^=icon_] path[d^="M13.48 16.18c.39.1.45.62.2.93A2.99"],
+[class^=icon_] path[d^="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"],
+[class^=icon_] path[d^="M16.83 15.23c.43.47 1.18.42 1.45-.14a7"],
+[class^=icon_] path[d^="M19.61 18.25a1.08 1.08 0 0 1-.07-1.33"] {
+    fill: var(--rec-stage) !important;
+}
+/*--- Continue Icon mic stage ---*/
+[class^=continueIcon_] path[d^="M12 2a4 4 0 0 0-4 4v4a4 4 0 0 0 8 0V6a4"],
+[class^=continueIcon_] path[d^="M6 10a1 1 0 0 0-2 0 8 8 0 0 0 7 7.94V20H9a1"] {
+    fill: var(--rec-mic) !important;
+}
+.defaultColor__4bd52.text-md\/medium_cf4812.defaultColor__5345c.title__9293f path[d^="M12 2a4 4 0 0 0-4 4v4a4 4 0 0 0 8 0V6a4"],
+.defaultColor__4bd52.text-md\/medium_cf4812.defaultColor__5345c.title__9293f path[d^="M6 10a1 1 0 0 0-2 0 8 8 0 0 0 7 7.94V20H9a1"] {
+    fill: var(--rec-mic) !important;
+}
+
+/*--- MicIcon ---*/
+[class^=micIcon__9aed4] path[d^="M12 2a4 4 0 0 0-4 4v4a4 4 0 0 0 8 0V6a4"],
+[class^=micIcon__9aed4] path[d^="M6 10a1 1 0 0 0-2 0 8 8 0 0 0 7 7.94V20H9a1"] {
+    fill: var(--rec-mic) !important;
+}
+
+/*--- News ---*/
+[class^=inputPrefix_] path[d^="M19.56 2a3 3 0 0 0-2.46"],
+[class^=icon_] path[d^="M19.56 2a3 3 0 0 0-2.46"],
+[class^=icon_] path[d^="M12.33 5.74a.5.5 0 0 1 .67.47V9a3"]{
+    fill: var(--rec-news-1) !important;
+}
+[class^=inputPrefix_] path[d^="M2 10c0-1.1.9-2 2-2h.5c.28 0 .5.22.5.5v7a.5.5 0 0 1-.5.5H4a2"],
+[class^=icon_] path[d^="M2 10c0-1.1.9-2 2-2h.5c.28 0 .5.22.5.5v7a.5.5 0 0 1-.5.5H4a2"] {
+    fill: var(--rec-news-2) !important;
+}
+/*--- Rules ---*/
+[class^=icon_] path[d^="M15 2a3 3 0 0 1 3 3v12H5.5a1.5"] {
+    fill: var(--rec-rules) !important;
+}
+/*--- Forum ---*/
+[class^=subtitleIcon_] path[d^="M18.91 12.98a5.45 5.45"],
+[class^=subtitleIcon_] path[d^="M19.24 10.86c.32.16.72-.02.74-.38L20"],
+[class^=inputPrefix_] path[d^="M18.91 12.98a5.45 5.45"],
+[class^=inputPrefix_] path[d^="M19.24 10.86c.32.16.72-.02.74-.38L20"],
+[class^=icon_] path[d^="M18.91 12.98a5.45 5.45"],
+[class^=icon_] path[d^="M19.24 10.86c.32.16.72-.02.74-.38L20"],
+[class^=icon_] path[d^="M13.58 3.23c.24-.33.15-.86-.24-.96C12.59"] {
+    fill: var(--rec-forum) !important;
+}
+
+/*------ Top ------*/
+/*--- Boosting ---*/
+[class^=icon_] path[d^="M10.95 1.4a1.59 1.59"], 
+[class^=icon_] path[d^="M11.65 6.35 9.29 8.71a1"] {
+    fill: var(--rec-top-boosting) !important;
+}
+/*--- Members ---*/ 
+[class^=icon_] path[d^="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44"] {
+    fill: var(--rec-top-members) !important;
+}
+/*--- Search Channels ---*/
+[class^=icon_] path[d^="M18.5 23c.88 0 1.7-.25 2.4-.69l1.4 1.4a1"], 
+[class^=icon_] path[d^="M3 3a1 1 0 0 0 0 2h18a1"] {
+    fill: var(--rec-search-channels) !important;
+}
+/*--- Events ---*/
+/*--- [class^=icon_] path[d^="M2 10a1 1 0 0 1 1-1h18a1"]  ---*/
+[class^=icon_] path[d^="M7 1a1 1 0 0 1 1 1v.75c0"] {
+    fill: var(--rec-top-events) !important;
+}
+/*--- Pin ---*/
+[class^=titleContainer_] path[d^="M19.38 11.38a3 3 0 0 0 4.24"],
+[class^=icon_] path[d^="M19.38 11.38a3 3 0 0 0 4.24"] {
+    fill: var(--rec-top-pin) !important;
+}
+/*--- Benachrichtigung ---*/
+[class^=icon_] path[d^="M9.7 2.89c.18-.07.32-.24.37-.43a2"]{
+    fill: var(--rec-top-noti-on) !important;
+}
+[class^=icon_] path[d^="M1.3 21.3a1 1 0 1 0 1.4 1.4l20-20a1"] {
+    fill: var(--rec-top-noti-off) !important;
+}
+
+
+/*------ DM ------*/
+/*--- Nitro ---*/
+[class^=linkButtonIcon_] path[d^="M15 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"], 
+[class^=linkButtonIcon_] path[d^="M7 4a1 1 0 0 0 0 2h3a1 1 0 1 1 0 2H5.5a1"],
+[class^=linkButtonIcon_] path[d^="M2.5 10a1 1 0 0 0 0-2H2a1 1 0 0 0 0 2h.5Z"] {
+    fill: var(--rec-dm-nitro) !important;
+}
+/*--- Friends ---*/
+[class^=icon_] path[d^="M13 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"],
+[class^=icon_] path[d^="M3 5v-.75C3 3.56 3.56 3 4.25"],
+[class^=linkButtonIcon_] path[d^="M13 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"],
+[class^=linkButtonIcon_] path[d^="M3 5v-.75C3 3.56 3.56 3 4.25"] {
+    fill: var(--rec-dm-friends) !important;
+}
+/*--- Shop ---*/
+[class^=linkButtonIcon_] path[d^="M2.63 4.19A3 3 0 0 1 5.53"]{
+    fill: var(--rec-dm-shop-1) !important;
+}
+[class^=linkButtonIcon_] path[d^="M21 11.42V19a3 3 0 0 1-3"] {
+    fill: var(--rec-dm-shop-2) !important;
+}
+
+
+/*------ Threads ------*/
+[class^=threadIcon_] path[d^="M12 2.81a1 1 0 0 1 0-1.41l.36-.36a1"],
+[class^=icon_] path[d^="M12 2.81a1 1 0 0 1 0-1.41l.36-.36a1"],
+[class^=iconWrapper_] path[d^="M12 2.81a1 1 0 0 1 0-1.41l.36-.36a1"] {
+    fill: var(--rec-threads) !important;
+}
+.container__5b40b {
+  .spineBorder__5b40b {
+    background: var(--rec-threads-line) !important;
+  }
+  .containerDefault_c69b6d {
+    >.iconVisibility_c69b6d.wrapper__2ea32.typeThread__2ea32 > .link__2ea32 {
+      border: 1px solid var(--rec-threads-line) !important;
+    }
+    >.iconVisibility_c69b6d.wrapper__2ea32.typeThread__2ea32.modeSelected__2ea32 > .link__2ea32 {
+      border: 1px solid var(--rec-threads-line-effect) !important;
+    }
+    >.spine__5b40b path[d^="M0 13H2c0 1.6569 1.3432 3 3 3v2c-2.7614"],
+    >.spine__5b40b path[d^="M6 18V16H9v2H6Zm3 0V16s1"] {
+      fill: var(--rec-threads-line) !important;
+    }
+
+    &:hover {
+      >.iconVisibility_c69b6d.wrapper__2ea32.typeThread__2ea32 > .link__2ea32 {
+        border: 1px solid var(--rec-threads-line-effect) !important;
+      }
+    }
+  }
+}
+/*--- Threadmessage ---*/
+.message__5126c.hasThread_c19a55{
+  >.container_b7e1cb > .container__9271d {
+    box-shadow: var(--rec-threads-line) 0px 0px 13px;
+    border: 1px solid var(--rec-threads-line);
+  }
+
+  &::after {
+    border-bottom: 2px solid var(--rec-threads-line);
+    border-left: 2px solid var(--rec-threads-line);
+  }
+}
+
+/*--- Message Delay ---*/
+.tabularNumbers__4bd52.text-sm\/medium_cf4812.cooldownText_b21699 {
+  color: var(--rec-message-delay) !important;
+}
