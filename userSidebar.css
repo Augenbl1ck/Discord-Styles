@@ -64,7 +64,6 @@
   }
 
   /* 
-    Fehler hier
     &:not(:has(button[aria-label="Disable Game Activity"])) {
     .buttons__37e49 {
       gap: 12px !important;
