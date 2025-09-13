@@ -151,7 +151,7 @@
 
   /* Playing Game Fix */
   &:has(.activityPanel_c48ade) {
-    height: calc(var( --custom-space)*-2 + 50px);
+    height: calc(var( --custom-space)*-2 + 55px);
 
     #vc-spotify-player {
       top: 41%;
