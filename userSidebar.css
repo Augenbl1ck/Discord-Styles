@@ -142,6 +142,11 @@
     min-width: 205px;
     transform-origin: left top;
     transform: rotate(90deg) translate(1.05%, -100%);
+
+    .container__4bbc6 {
+      left: -3.5px;
+      border-radius: 8px;
+    }
   }
 
   /* Playing Game Fix */
@@ -156,13 +161,9 @@
       display: none;
     }
 
-    .body__5dec7 {
-      position: abs;
-      margin-left: 3px;
-    }
-
     .activityPanel_c48ade {
       background-color: color-mix(in oklab, rgb(32, 32, 36) 100%, rgb(0, 0, 0));
+      cursor: pointer;
     }
   }
 
