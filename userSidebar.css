@@ -38,9 +38,13 @@
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
   }
+  
+  .scroller__99e7c {
+    margin-bottom: 0;
+  }
 }
 
-.panels_c48ade {
+.panels__5e434 {
   height: calc(var( --custom-space)*-2);
   min-height: 205px;
   width: calc(var(--custom-guild-list-width) - var(--space-xs)*2) !important;
@@ -61,6 +65,13 @@
     border-bottom: unset;
     /* FadeOut Spotify animataion */
     transition: opacity .25s ease;
+
+    #vc-spotify-info-wrapper,
+    #vc-spotify-progress-bar,
+    #vc-spotify-button-row {
+      position: relative;
+      left: 8px !important;
+    }
   }
 
   /* 
@@ -76,7 +87,7 @@
   .avatarWrapper__37e49{
     min-width: 40px;
     transform-origin: left bottom;
-    transform: rotate(-90deg) translate(0%, 110%);
+    transform: rotate(-90deg) translate(0%, 90%);
 
     .wrapper__44b0c.avatar__37e49{
       margin-left: 7.5px;
@@ -128,8 +139,11 @@
     }
   }
 
-  .buttons__37e49 button svg {
-    transform: rotate(-90deg) !important;
+  .buttons__37e49 {
+    transform: translateX(-2%);
+    button svg {
+      transform: rotate(-90deg) !important;
+    }
   }
   
   .container_e131a9 {
@@ -235,7 +249,7 @@
   } 
 }
 
-.panels_c48ade:hover {
+.panels__5e434:hover {
   &:has(#vc-spotify-player) {
     width: calc(100% - var(--custom-panels-spacing)* 2) !important;
     /* unfolded user area animation with Spotify not in Talk*/
