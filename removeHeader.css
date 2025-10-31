@@ -43,7 +43,7 @@
     z-index: 100;
   }
 
-  div.base_c48ade {
+  div.base__5e434 {
     grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
 
     &:has(div.bar_c38106 > div.trailing_c38106 .updateIconForeground__49676) {
